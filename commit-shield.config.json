@@ -1,0 +1,26 @@
+{
+  "maxFileSizeMB": 5,
+  "disallowGlobs": [
+    "node_modules/**",
+    "dist/**",
+    "build/**"
+  ],
+  "disallowFilenames": [
+    ".env",
+    ".env.*",
+    "*serviceAccount*.json",
+    "*-firebase-adminsdk-*.json"
+  ],
+  "disallowContentPatterns": [
+    "-----BEGIN [A-Z ]*PRIVATE KEY-----",
+    "\\\"type\\\"\\s*:\\s*\\\"service_account\\\"",
+    "\\\"private_key\\\"\\s*:\\s*\\\"-----BEGIN",
+    "AIza[0-9A-Za-z_\\-]{35}",
+    "AKIA[0-9A-Z]{16}",
+    "ghp_[0-9A-Za-z]{36}",
+    "xox[baprs]-[0-9A-Za-z-]+"
+  ],
+  "ignoreGlobs": [
+    ".git/**"
+  ]
+}

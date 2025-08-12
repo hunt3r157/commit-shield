@@ -1,0 +1,26 @@
+{
+  "name": "commit-shield",
+  "version": "0.1.0",
+  "description": "Tiny zero-dep pre-commit & pre-push guard for secrets, huge files, and junk.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "commit-shield:init": "node scripts/install.mjs",
+    "test": "node -e \"console.log('No tests yet')\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/commit-shield.git"
+  },
+  "keywords": [
+    "git",
+    "hook",
+    "pre-commit",
+    "pre-push",
+    "secrets",
+    "security"
+  ]
+}
