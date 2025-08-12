@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/commit-shield.git"
+    "url": "git+https://github.com/your-username/commit-shield.git"
   },
   "keywords": [
     "git",
@@ -22,5 +22,20 @@
     "pre-push",
     "secrets",
     "security"
-  ]
+  ],
+  "bin": {
+    "commit-shield": "bin/commit-shield.mjs"
+  },
+  "files": [
+    "bin",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/your-username/commit-shield#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/commit-shield/issues"
+  }
 }

@@ -9,6 +9,33 @@ A **zero‑config, tiny pre-commit & pre-push guard** that blocks accidental com
 
 ---
 
+
+## Quick start
+
+### Fastest: npx (recommended)
+```bash
+# inside your git repo
+npx commit-shield init
+# (re-runs safely for teammates)
+```
+
+### Or manual install
+```bash
+mkdir -p scripts
+# copy these files from this repo if you downloaded a zip or cloned it:
+cp scripts/commit-shield.mjs scripts/install.mjs ./scripts/
+node scripts/install.mjs
+```
+
+### CI usage
+```bash
+# run the same checks in CI
+npx commit-shield check pre-push
+```
+
+---
+
+
 ## Quick start
 
 Add the two scripts to your repo and install hooks:
