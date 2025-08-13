@@ -2,6 +2,10 @@
 
 Tiny, zero‑dependency **pre-commit / pre-push guard** for Git that prevents secrets, giant files, and junk from entering your repo. Works with plain Git hooks and Node ≥ 18\. CI re-check included.
 
+[![CI](https://img.shields.io/github/actions/workflow/status/hunt3r157/commit-shield/ci.yml?branch=main)](https://github.com/hunt3r157/commit-shield/actions)
+[![Release](https://img.shields.io/github/actions/workflow/status/hunt3r157/commit-shield/release.yml?label=release)](https://github.com/hunt3r157/commit-shield/actions)
+[![npm](https://img.shields.io/npm/v/commit-shield.svg)](https://www.npmjs.com/package/commit-shield)
+
 ---
 
 ## **Table of contents**
