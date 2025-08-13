@@ -5,17 +5,17 @@
 //   commit-shield check [pre-commit|pre-push] -> runs checks without installing anything
 // Node 18+
 
+import { readFileSync, statSync, existsSync, mkdirSync, writeFileSync, chmodSync } from 'node:fs';
 import { execSync } from 'node:child_process';
-import { existsSync, mkdirSync, writeFileSync, chmodSync, readFileSync, statSync } from 'node:fs';
-import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import path, { join, dirname } from 'node:path';
 
-const args = process.argv.slice(2);
-const cmd = args[0] || 'help';
-const HOOK = (args[1] && !args[1].startsWith('-')) ? args[1] : 'pre-commit';
-const NO_HOOKS = args.includes('--no-hooks');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const PKG_ROOT = join(__dirname, '..');
 
-const ROOT = getGitRoot() || process.cwd();
-const SCRIPTS_DIR = path.join(ROOT, 'scripts');
+// Use the copies shipped *inside the package*, not the target repo
+const GUARD_SOURCE   = readFileSync(join(PKG_ROOT, 'scripts', 'commit-shield.mjs'), 'utf8');
+const INSTALL_SOURCE = readFileSync(join(PKG_ROOT, 'scripts', 'install.mjs'), 'utf8');
 
 if (cmd === 'init') {
   mkdirSync(SCRIPTS_DIR, { recursive: true });
