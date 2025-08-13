@@ -1,6 +1,6 @@
 {
   "name": "commit-shield",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Tiny zero-dep pre-commit & pre-push guard for secrets, huge files, and junk.",
   "license": "MIT",
   "type": "module",
