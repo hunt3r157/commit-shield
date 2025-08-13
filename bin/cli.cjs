@@ -1,5 +1,8 @@
 #!/usr/bin/env node
-// Small CJS wrapper so npm's .bin always works and loads our ESM CLI
+const { pathToFileURL } = require('node:url');
+const path = require('node:path');
+
 (async () => {
-  await import(new URL('./commit-shield.mjs', import.meta.url));
+  const esUrl = pathToFileURL(path.join(__dirname, 'commit-shield.mjs')).href;
+  await import(esUrl);
 })();
