@@ -28,6 +28,7 @@
   },
   "files": [
     "bin",
+    "scripts",
     "LICENSE",
     "README.md"
   ],
