@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/commit-shield.git"
+    "url": "git+https://github.com/hunt3r157/commit-shield.git"
   },
   "keywords": [
     "git",
@@ -34,8 +34,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/your-username/commit-shield#readme",
+  "homepage": "https://github.com/hunt3r157/commit-shield#readme",
   "bugs": {
-    "url": "https://github.com/your-username/commit-shield/issues"
+    "url": "https://github.com/hunt3r157/commit-shield/issues"
   }
 }
