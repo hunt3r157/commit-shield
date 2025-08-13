@@ -24,7 +24,7 @@
     "security"
   ],
   "bin": {
-    "commit-shield": "bin/commit-shield.mjs"
+    "commit-shield": "bin/cli.cjs"
   },
   "files": [
     "bin",
