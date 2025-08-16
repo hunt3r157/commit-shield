@@ -5,6 +5,8 @@ Tiny, zero‑dependency **pre-commit / pre-push guard** for Git that prevents se
 [![CI](https://img.shields.io/github/actions/workflow/status/hunt3r157/commit-shield/ci.yml?branch=main)](https://github.com/hunt3r157/commit-shield/actions)
 [![Release](https://img.shields.io/github/actions/workflow/status/hunt3r157/commit-shield/release.yml?label=release)](https://github.com/hunt3r157/commit-shield/actions)
 [![npm](https://img.shields.io/npm/v/commit-shield.svg)](https://www.npmjs.com/package/commit-shield)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support-ff5e5b?logo=kofi&logoColor=white)](https://ko-fi.com/hunt3r157)
+
 
 ---
 
